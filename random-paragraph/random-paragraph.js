@@ -9,4 +9,11 @@
 
 var randomParagraphWithFiveSentences = function() {
   // your code is here
+  chance.call(this)
+  var obj={};
+  chance.prototype=function(seed)
+  if ( seed !== null) {
+     this.random = seed;
+        return this;
 };
+}

@@ -14,7 +14,7 @@ var TimeComplexity = {
 
 
 var sortedIndexOfTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
-
+//o(1)
 var sortedIndexOf = function(array, targetElement) {
   var minIndex = 0;
   var maxIndex = array.length - 1;
@@ -39,7 +39,7 @@ var sortedIndexOf = function(array, targetElement) {
 
 
 var findDuplicatesTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
-
+//the time complexity is o(n) because we have one operation 
 var findDuplicates = function(string) {
   var tracker = {};
   var result = [];
