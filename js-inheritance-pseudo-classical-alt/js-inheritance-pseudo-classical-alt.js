@@ -36,3 +36,12 @@ var makeFlyingHorse = function(name, color) {
 };
 
 // YOUR WORK GOES BELOW
+var Hourse=function(){
+  this.makeHorse=function(name){
+  this.result = {};
+  this.name = name;
+  this.goSomewhere = function(destination) {
+    return name + ' is galloping to ' + destination + '!';
+  }
+  };
+}
