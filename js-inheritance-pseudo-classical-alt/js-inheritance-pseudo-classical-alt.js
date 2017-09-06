@@ -36,3 +36,27 @@ var makeFlyingHorse = function(name, color) {
 };
 
 // YOUR WORK GOES BELOW
+
+
+var makeHorse = function(name) {
+  
+  this.name = name;
+}
+  makeHorse.prototype.goSomewhere = function(destination) {
+    return this.name + ' is galloping to ' + destination + '!';
+  };
+
+  var makeFlyingHorse = function(name, color) {
+  
+  this.color = color;
+  var oldGoSomewhere = this.goSomewhere;
+}
+  makeFlyingHorse.prototype.goSomewhere = function(destination, milesToDestination) {
+    if (milesToDestination < 10) {
+      return oldGoSomewhere(destination);
+    } else {
+      return this.name + ' is flying to ' + destination + '!';
+    }
+  
+};
+ 
