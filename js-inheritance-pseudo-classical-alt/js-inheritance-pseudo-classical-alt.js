@@ -36,3 +36,11 @@ var makeFlyingHorse = function(name, color) {
 };
 
 // YOUR WORK GOES BELOW
+var myHorse=new makeHorse(name);
+myHorse.prototype=Object.create(makeHorse.prototype);
+myHorse.prototype.construtor=myHorse;
+
+
+var myFlyingHorse= new makeFlyingHorse(name);
+myFlyingHorse.prototype=Object.create(makeFlyingHorse.prototype);
+myFlyingHorse.prototype.construtor=myFlyingHorse;
